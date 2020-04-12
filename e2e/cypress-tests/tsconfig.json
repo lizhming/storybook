@@ -1,0 +1,12 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "strict": true,
+    "baseUrl": "./",
+    "outDir": "./dist",
+    "target": "es6",
+    "types": ["cypress", "node"],
+    "esModuleInterop": true
+  },
+  "include": ["**/*.ts"]
+}

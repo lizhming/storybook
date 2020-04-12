@@ -1,5 +1,5 @@
 version: 2.1
-  
+
 aliases:
   - &defaults
     working_directory: /tmp/storybook
@@ -125,6 +125,9 @@ jobs:
       - run:
           name: test local registry
           command: yarn info @storybook/core
+      - run:
+          name: run angular e2e tests (version 9.1)
+          command: yarn test:e2e-angular latest
   e2e:
     working_directory: /tmp/storybook
     docker:
